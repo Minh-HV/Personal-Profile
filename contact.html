@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <section class="nav">
+      <h1>Minh Hoang Vu</h1>
+      <nav>
+        <ul class="navbar">
+          <li><a href="index.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <main>
+      <section>
+        <h2>Contact Me</h2>
+        <div id="contact">
+          <form action="submit-form.php" method="post">
+            <div class="form-container">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" class="form-text" />
+
+              <label for="email">Your Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-text"
+                required
+              />
+
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                minlength="10"
+                maxlength="100"
+                class="form-text"
+                required
+              />
+
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                minlength="20"
+                maxlength="500"
+                cols="50"
+                rows="6"
+                required
+                class="form-text"
+              ></textarea>
+
+              <button type="submit" value="Send Email">Send Email</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section id="footer">
+        <div class="footer-container">
+          <a href="http://github.com" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+            <span>Github</span>
+          </a>
+
+          <a
+            href="http://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+            <span>Linkedin</span>
+          </a>
+
+          <a href="mailto:vuminhhoang5689@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Email</span>
+          </a>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,418 @@
+
+/* GENERAL SET UP */
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* 1 - Index Styles */
+
+/* 1.0 Styling for the navigation section */
+.nav {
+    display: flex;
+    justify-content: space-between; /* Space between title and links */
+    align-items: center; /* Align vertically */
+    padding: 10px;
+}
+
+h1{
+    font-size: 2.5rem;
+    margin: 15px 60px;
+    padding: 10px;
+    text-align: left;
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+    font-size: 1.5rem;
+    margin: 15px 60px;
+}
+
+.navbar a:hover{
+    color: white;
+    background-color: grey;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+
+/* 1.1 Section 1: About me */
+
+#about_me{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    grid-template-rows: minmax(300px, auto);
+}
+
+#about_me .headshot img{
+    border-radius: 50%;
+    max-width: 400px;
+    height: auto;
+    margin: 20px 30px;
+    display: flex;
+} 
+
+.text h2 {
+    font-size: 4rem;
+}
+
+.text{
+    justify-content: center;
+    align-self: top;
+    margin-right: 50px;
+    font-size: 16pt;
+} 
+
+.headshot {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* 1.2 Section 2: About School */
+
+#school{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: minmax(120px, auto);
+    margin: 30px 100px;
+    gap: 20px;
+    justify-content: center;
+}
+
+#school a{
+    border-style: solid;
+    border-radius: 2rem;
+    border-color: green;
+    padding: 2.5px;
+}
+
+#school a:hover{
+    color: white;
+    transition: 300ms ease;
+    background-color: green;
+}
+#school span{
+    padding: 0;
+    color: green;
+    font-weight: bold;
+}
+
+
+/* 1.3 Footer */
+
+#footer{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    text-align: center;
+    margin: 20px;
+}
+
+span {
+    padding: 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+
+.footer-container a {
+    font-size: 1.5rem; /* font size of icons */
+    padding: 0 2.5rem; /* padding between anchors */
+} 
+
+
+
+
+/* Media Queries styles */
+
+@media (max-width: 850px){
+    a{
+        font-size: 1.15rem;
+        padding: 10px 0;
+    }
+} 
+
+
+
+
+
+
+
+
+/* 2 - RESUME FILE */
+
+/* 2.1 Download CV style */
+.btn {
+    font-size: 1rem;
+    margin-left: 6rem;
+    margin-top: 1rem;
+    justify-content: center;
+    margin-bottom: 2px;
+    border-radius: 2rem;
+    padding: 5px;
+}
+
+.btn :hover{
+    color: green;
+    font-weight: bold;
+}
+
+
+.resume-email {
+    font-size: 12pt;
+    text-align: center;
+    margin-left: 3rem;
+}
+
+
+/* 2.2 Grid for container */
+.container{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 30% 70%;
+    padding: 10px;
+}
+
+/* 2.3 Picture */
+.picture-container img{
+    max-width: 80%;
+    height: auto;
+    margin: 1em 0 2em 2em;
+    display: flex;
+}
+
+/* 2.4 Text */
+.objective {
+    font-size: 16pt;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.experience {
+    margin-top: 5px;
+}
+
+.experience ul {
+    list-style: none;
+}
+
+.experience span {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+/* Arrow to next page style */
+
+.page-direction {
+    text-align: right;
+    margin: 20px;
+}
+
+.page-direction a {
+    font-size: 0.9rem;
+    border: 1px solid;
+    border-radius: 2rem;
+    border-width: 4px;
+    padding: 5px 5px;
+    font-weight: bold;
+}
+
+/* 3 - Technical SKILSS */
+
+/* Title  */
+.title {
+    justify-content: center;
+    font-size: 3rem;
+}
+
+/* H2 */
+h2 {
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 1.3rem;
+}
+
+.tech_skills {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+}
+
+.details_container_front, .details_container_back, .details_container_soft {
+    padding: 5px;
+    margin: 5px;
+}
+
+.about_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 2rem;
+    padding: 0.5rem;
+}
+
+h4 {
+    font-size: 12pt;
+}
+
+.skills_container {
+    margin: 5px; 
+}
+
+.skills_container p {
+    font-size: 10pt;
+}
+
+/* 4 - Soft Skills */
+
+.soft_skills{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+
+.skills_item{
+    display: flex;
+    align-items: center;
+}
+
+.skills_item i {
+    margin-right: 10px;
+    margin-bottom: 0.5rem;
+
+}
+
+
+/* 5 - Education */
+
+#education {
+    padding: 20px;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .education {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 20px; /* Space between the columns */
+  }
+  
+  .edu {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    text-align: center;
+  }
+  
+  .edu p {
+    margin: 5px 0;
+    font-style: normal; /* disable the default italic style for <em> */
+    font-weight: bold;
+  }
+
+/* 6 - Projects */
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(550px, auto);
+}
+
+
+
+.project-box img{
+    max-width: 80%;
+    height: auto;
+    margin: 1em 0 2em 2em;
+    border-radius: 1rem;
+    display: flex;
+}
+
+.project-box {
+    border-style: solid;
+    border-width: 6px 2px 2px 2px;
+    border-radius: 2rem;
+    margin: 20px;
+    text-align: center;
+    border-color: darkcyan;
+}
+
+.project-box a{
+    border-style: solid;
+    border-radius: 2rem;
+    padding: 5px;
+}
+
+/* 7 - Contact */
+
+#contact {
+    max-width: 500px; /* Set max width for the form container */
+    margin: 20px auto; /* Center the form container */
+    padding: 10px; /* Add padding inside the box */
+    border: 1px solid; /* Add a border around the box */
+    border-radius: 10px; /* Round the corners of the box */
+    background-color:rgb(204, 238, 227); /* Light background color */
+}
+
+
+.form-container {
+    display:flex;
+    flex-direction: column;
+}
+
+/* Style for labels and inputs */
+label {
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold;  /* Make labels bold */
+  }
+
+  button {
+    padding: 10px 20px; /* Button padding */
+    background-color: #333; /* Dark background color */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor pointer for button */
+  }
+
+  button:hover {
+    background-color:darkgrey; /* Lighter background on hover */
+  }
+
+
+.form-text {
+  margin-bottom: 10px; /* Space between inputs */
+  padding: 10px; /* Add padding inside inputs */
+  border: 1px solid; /* Border for inputs */
+  border-color: beige;
+  border-radius: 5px; /* Rounded corners */
+  font-size: 12pt; /* Font size for inputs */
+}
+
+
+
+
+
