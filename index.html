@@ -1,15 +1,31 @@
+<!-- HTML Comments
+  Student name: Minh Hoang Vu
+  File name: index.html
+  Date created: October 02, 2024
+  Brief description: The page's purpose is to introduce the information about myself.
+  -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta information for responsiveness and character encoding -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta name="author" content="Minh Hoang Vu" />
+    <meta
+      name="description"
+      content="The page's purpose is to introduce the information about myself."
+    />
+    <meta name="keywords" content="about me, Minh, Algonquin College" />
+    <!-- Preconnect to Google Fonts and Font Awesome for faster performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google Fonts: Poppins -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome for icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -22,7 +38,7 @@
     <title>About Me</title>
   </head>
   <body>
-    <!-- NAV BAR -->
+    <!-- NAV BAR: Navigation section with links to different pages -->
     <section class="nav">
       <h1>Minh Hoang Vu</h1>
       <nav>
@@ -34,19 +50,19 @@
         </ul>
       </nav>
     </section>
-
     <main>
-      <!-- SECTION 1: About me-->
+      <!-- SECTION 1: About me with profile picture and brief introduction -->
       <section id="about_me">
         <div class="headshot">
+          <!-- Profile picture of Minh Hoang Vu -->
           <img
             src="Image/my_headshot2.JPG"
             alt="Minh Hoang Vu profile headshot"
           />
         </div>
-
         <div class="text">
-          <h2>Hi, I'm Minh</h2>
+          <!-- Introduction with hobbies and career focus -->
+          <h2>Hi, I'm <span class="name">Minh</span></h2>
           <p>
             An aspiring <span>software developer</span> who enjoys
             <span>solving puzzles</span> and unleashing my
@@ -56,8 +72,8 @@
           </p>
         </div>
       </section>
-      <!-- SECTION 2: About school-->
-      <section id="school">
+      <!-- SECTION 2: Information about Algonquin College and the program -->
+      <div id="school">
         <p>
           <span>Algonquin College</span> is known for its focus on practical
           learning and innovation, preparing students for successful careers in
@@ -70,31 +86,34 @@
             >Algonquin College</a
           >
         </p>
-      </section>
+      </div>
     </main>
+    <!-- FOOTER: Links to GitHub, LinkedIn, and email contact -->
     <footer>
-      <section id="footer">
+      <div id="footer">
         <div class="footer-container">
-          <a href="http://github.com" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/Minh-HV"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i class="fa-brands fa-github"></i>
             <span>Github</span>
           </a>
-
           <a
-            href="http://linkedin.com"
+            href="https://www.linkedin.com/in/minhhoangvu/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i class="fa-brands fa-linkedin"></i>
             <span>Linkedin</span>
           </a>
-
           <a href="mailto:vuminhhoang5689@gmail.com">
             <i class="fa-solid fa-envelope"></i>
             <span>Email</span>
           </a>
         </div>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
