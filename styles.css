@@ -1,131 +1,177 @@
+/* HTML Comments
+Student name: Minh Hoang Vu
+File name: styles.css
+Date created: October 02, 2024
+Brief description: The page's purpose is to define the styles for the project portfolio and other sections.
+*/
 
 /* GENERAL SET UP */
 
+/* Resetting default styles for all elements */
 * {
-    font-family: 'Poppins', sans-serif;
-    margin: 0px;
-    padding: 0px;
+    font-family: 'Poppins', sans-serif; /* Setting a default font family */
+    margin: 0px; /* Removing default margins */
+    padding: 0px; /* Removing default padding */
 }
 
+body {
+    background-image: url(Image/Free_Pink_Background.png); /* Applying a background image */ /* https://www.canva.com/templates/EAE9xJfDEzQ-free-pink-neutral-abstract-watercolor-linktree-background/ */
+    background-repeat: no-repeat; /* Ensuring the background image does not repeat */
+    background-size: 100% 100%; /* Stretching the background image to cover the entire viewport */
+}
 
 /* 1 - Index Styles */
 
 /* 1.0 Styling for the navigation section */
+
+/* Navbar container styling */
 .nav {
-    display: flex;
+    display: flex; /* Using flexbox for the layout */
     justify-content: space-between; /* Space between title and links */
     align-items: center; /* Align vertically */
-    padding: 10px;
+    padding: 5px; /* Adding padding around the navbar */
+    background-color: #284b63; /* Setting a background color for the navbar */
+    color: white; /* Setting the text color for the navbar */
 }
 
+/* Styling for the main heading (h1) */
 h1{
-    font-size: 2.5rem;
-    margin: 15px 60px;
-    padding: 10px;
-    text-align: left;
-    display: flex;
+    font-size: 2.5rem; /* Font size for the title */
+    margin: 5px 60px; /* Adding margin around the title */
+    padding: 10px; /* Padding inside the h1 */
+    text-align: left; /* Aligning the title to the left */
+    display: flex; /* Displaying the title as flex */
 }
 
+/* Styling the navigation bar (navbar) list */
 .navbar {
-    display: flex;
-    list-style-type: none;
-    gap: 50px;
-    font-size: 1.5rem;
-    margin: 15px 60px;
+    display: flex; /* Using flexbox to align the navigation links horizontally */
+    list-style-type: none; /* Removing the default bullet points for the list items */
+    gap: 50px; /* Adding space between each navigation link */
+    font-size: 1.5rem; /* Setting the font size for the navigation links */
+    margin: 15px 60px; /* Adding margin around the navbar */
 }
 
+/* Hover effect for navigation links */
 .navbar a:hover{
-    color: white;
-    background-color: grey;
-    padding: 10px;
-    border-radius: 15px;
+    color: white; /* Changing the text color to white when hovered */
+    background-color: #0081a7; /* Applying a background color on hover */
+    padding: 5px; /* Adding padding inside the link to increase clickable area */
+    border-radius: 15px; /* Rounding the corners of the link background */
+}
+
+.navbar a{
+    color: white; /* Setting the default text color to white */
 }
 
 a{
-    color: black;
-    text-decoration: none;
+    color: black; /* Setting the default color of anchor tags to black */
+    text-decoration: none; /* Removing the default underline from anchor tags */
 }
 
 
 /* 1.1 Section 1: About me */
 
 #about_me{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    justify-content: center;
-    grid-template-rows: minmax(300px, auto);
+    display: grid; /* Use grid layout for the about me section */
+    grid-template-columns: 50% 50%; /* Two equal columns */
+    justify-content: center; /* Center content within the grid */
+    grid-template-rows: minmax(300px, auto); /* Minimum height of 300px, but can grow */
 }
 
+
+.headshot {
+    display: flex; /* Use flexbox for the headshot container */
+    justify-content: center; /* Center the headshot image */
+    margin: 10px; /* Add margin around the headshot */
+}
+
+
 #about_me .headshot img{
-    border-radius: 50%;
-    max-width: 400px;
-    height: auto;
-    margin: 20px 30px;
-    display: flex;
+    border-radius: 50%; /* Make the image circular */
+    width: 60%; /* Set width to 60% of its parent */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px 10px; /* Add margin around the image */
+    display: block; /* Ensure the image behaves like a block element */
 } 
 
 .text h2 {
-    font-size: 4rem;
+    font-size: 4rem; /* Set font size for the heading */
+}
+
+.name {
+    font-size: 4rem; /* Set font size for the name */
+    color: #001d3d; /* Set color for the name */
 }
 
 .text{
-    justify-content: center;
-    align-self: top;
-    margin-right: 50px;
-    font-size: 16pt;
+    justify-content: center; /* Center content horizontally in flex container */
+    align-self: flex-start; /* Aligns the element to the top */
+    margin-right: 50px; /* Adds right margin to the text element */
+    font-size: 16pt; /* Set the base font size for text */
 } 
 
-.headshot {
-    display: flex;
-    justify-content: center;
+
+p span:nth-child(1) {
+    color: #2F9C95; /* Set color for the first span inside a paragraph */
+    font-size: 2rem; /* Set font size for the first span */
 }
 
+p span:nth-child(2) {
+    color: #FF1654; /* Set color for the second span inside a paragraph */
+    font-size: 2rem; /* Set font size for the second span */
+}
+
+p span:nth-child(3) {
+    color: #0ead69; /* Set color for the third span inside a paragraph */
+    font-size: 2rem; /* Set font size for the third span */
+}
 
 /* 1.2 Section 2: About School */
 
 #school{
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: minmax(120px, auto);
-    margin: 30px 100px;
-    gap: 20px;
-    justify-content: center;
+    display: grid; /* Use grid layout for the school section */
+    grid-template-columns: 60% 40%; /* Define two columns, with the first being 60% and the second 40% */
+    grid-template-rows: minmax(120px, auto); /* Minimum height of 120px, but can grow */
+    margin: 30px 100px; /* Add margin around the school section */
+    gap: 20px; /* Space between grid items */
+    justify-content: center; /* Center the grid content */
 }
 
 #school a{
-    border-style: solid;
-    border-radius: 2rem;
-    border-color: green;
-    padding: 2.5px;
+    border-style: solid; /* Solid border for links */
+    border-radius: 2rem; /* Rounded corners for the links */
+    border-color: green; /* Set border color to green */
+    padding: 2.5px; /* Padding inside the link */
 }
 
 #school a:hover{
-    color: white;
-    transition: 300ms ease;
-    background-color: green;
+    color: white; /* Change text color to white on hover */
+    transition: 300ms ease; /* Smooth transition effect for hover changes */
+    background-color: green; /* Change background color to green on hover */
 }
 #school span{
-    padding: 0;
-    color: green;
-    font-weight: bold;
+    padding: 0; /* Remove padding for spans */
+    color: green; /* Set text color for spans to green */
+    font-weight: bold; /* Make text bold */
 }
 
 
 /* 1.3 Footer */
 
 #footer{
-    display: flex;
-    justify-content: center;
+    display: flex; /* Use flexbox layout for the footer */
+    justify-content: center; /* Center footer content horizontally */
 }
 
 .footer-container {
-    text-align: center;
-    margin: 20px;
+    text-align: center; /* Center-align text within the footer container */
+    margin: 20px; /* Add margin around the footer container */
 }
 
 span {
-    padding: 0 0.5rem;
-    font-size: 1.5rem;
+    padding: 0 0.5rem; /* Add horizontal padding to spans for spacing */
+    font-size: 1.5rem; /* Set font size for spans */
 }
 
 
@@ -134,169 +180,220 @@ span {
     padding: 0 2.5rem; /* padding between anchors */
 } 
 
-
-
-
-/* Media Queries styles */
-
-@media (max-width: 850px){
-    a{
-        font-size: 1.15rem;
-        padding: 10px 0;
-    }
-} 
-
-
-
-
-
-
-
-
 /* 2 - RESUME FILE */
 
 /* 2.1 Download CV style */
 .btn {
-    font-size: 1rem;
-    margin-left: 6rem;
-    margin-top: 1rem;
-    justify-content: center;
-    margin-bottom: 2px;
-    border-radius: 2rem;
-    padding: 5px;
+    font-size: 1rem; /* Set font size for the button */
+    margin-left: 6rem; /* Add left margin to the button */
+    margin-top: 1rem; /* Add top margin to the button */
+    justify-content: center; /* Center content within the button */
+    margin-bottom: 2px; /* Add bottom margin to the button */
+    border-radius: 2rem; /* Rounded corners for the button */
+    padding: 5px; /* Padding inside the button */
+    background-color: #2a9d8f; /* Set background color for the button */
 }
 
-.btn :hover{
-    color: green;
-    font-weight: bold;
+.btn:hover{
+    background-color: #57cc99; /* Change background color on hover */
 }
 
 
 .resume-email {
-    font-size: 12pt;
-    text-align: center;
-    margin-left: 3rem;
+    font-size: 12pt; /* Set font size for the resume email text */
+    text-align: center; /* Center-align the text */
+    margin-left: 3rem; /* Add left margin to the resume email text */
 }
 
+.resume-email:hover {
+    color: #57cc99; /* Change text color on hover */
+}
 
 /* 2.2 Grid for container */
 .container{
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: 30% 70%;
-    padding: 10px;
+    display: grid; /* Use grid layout for the container */
+    justify-content: space-between; /* Space items evenly within the grid */
+    grid-template-columns: 30% 70%; /* Define two columns, with the first being 30% and the second 70% */
+    padding: 10px; /* Add padding inside the container */
 }
 
 /* 2.3 Picture */
 .picture-container img{
-    max-width: 80%;
-    height: auto;
-    margin: 1em 0 2em 2em;
-    display: flex;
+    max-width: 80%; /* Set maximum width of the image to 80% of its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    margin: 1em 0 2em 2em; /* Add vertical margin of 1em on top, 2em on bottom, and 2em on the left */
+    display: flex; /* Enable flexbox for image alignment */
+    border: 5px solid white; /* White border around the image */
 }
 
 /* 2.4 Text */
 .objective {
-    font-size: 16pt;
-    margin: 10px 0px;
-    text-align: center;
+    font-size: 16pt; /* Set font size for the objective text */
+    margin: 10px 0px; /* Add vertical margin to the objective text */
+    text-align: center; /* Center-align the objective text */
+    color: #004b23; /* Set text color for the objective */
 }
 
 .experience {
-    margin-top: 5px;
+    margin-top: 5px; /* Add top margin to the experience section */
 }
 
 .experience ul {
-    list-style: none;
+    list-style: none; /* Remove default list styling for unordered lists */
+}
+
+
+.experience ul li {
+    color: #034078; /* Set text color for list items in the experience section */
 }
 
 .experience span {
-    margin-bottom: 10px;
-    text-align: center;
+    margin-bottom: 10px; /* Add bottom margin to span elements within the experience section */
+    text-align: center; /* Center-align the text within the span */
+    color: #bf0603; /* Set text color for spans to a deep red */
+}
+
+.fa-briefcase {
+    margin-right: 10px; /* Add right margin to the briefcase icon */
+    color: #003554; /* Set color for the briefcase icon */
+}
+
+.work-title {
+    color: #17c3b2; /* Set text color for work titles */
+    font-size: 1.1rem; /* Set font size for work titles */
+}
+
+.experience > div {
+    border: 2px solid; /* Set a solid border for divs within the experience section */
+    padding: 3px; /* Add padding inside the divs */
+    border-radius: 1rem; /* Round the corners of the divs */
+    border-color: #ce4257; /* Set border color to a shade of red */
+    border-left-width: 10px; /* Increase the left border width for emphasis */
+    background-color: white; /* Set background color to white */
 }
 
 
 /* Arrow to next page style */
 
 .page-direction {
-    text-align: right;
-    margin: 20px;
+    text-align: right; /* Align the text to the right */
+    margin: 20px; /* Add margin around the page direction section */
 }
 
+
 .page-direction a {
-    font-size: 0.9rem;
-    border: 1px solid;
-    border-radius: 2rem;
-    border-width: 4px;
-    padding: 5px 5px;
-    font-weight: bold;
+    font-size: 0.9rem; /* Set font size for the links */
+    border: 1px solid; /* Add a solid border to the links */
+    border-radius: 2rem; /* Round the corners of the links */
+    border-width: 4px; /* Set width of the border */
+    border-color: #3dccc7; /* Set border color to a teal shade */
+    color: #3dccc7; /* Set text color for the links to match the border */
+    padding: 5px 5px; /* Add padding inside the links */
+    font-weight: bold; /* Make the text bold */
+}
+
+.page-direction a:hover {
+    background-color: #16697a; /* Change background color on hover */
+    color: white; /* Change text color to white on hover */
 }
 
 /* 3 - Technical SKILSS */
 
 /* Title  */
 .title {
-    justify-content: center;
-    font-size: 3rem;
+    justify-content: center; /* Center the title content horizontally */
+    font-size: 3rem; /* Set font size for the title */
+    color: #bf0603; /* Set text color for the title to a deep red */
 }
 
 /* H2 */
 h2 {
-    text-align: center;
-    padding: 1.2rem;
-    font-size: 1.3rem;
+    text-align: center; /* Center-align the text for h2 elements */
+    padding: 1.2rem; /* Add padding around h2 elements */
+    font-size: 1.3rem; /* Set font size for h2 elements */
 }
 
 .tech_skills {
-    display: grid;
-    grid-template-columns: repeat(3, 33.33%);
+    display: grid; /* Use grid layout for the tech skills section */
+    grid-template-columns: repeat(3, 33.33%); /* Create three equal columns for layout */
 }
 
+.tech_skills h2{
+    color: #16697a; /* Set text color for h2 elements within the tech skills section */
+}
+
+
+
 .details_container_front, .details_container_back, .details_container_soft {
-    padding: 5px;
-    margin: 5px;
+    padding: 5px; /* Add padding inside the detail containers */
+    margin: 5px; /* Add margin around the detail containers */
 }
 
 .about_container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    row-gap: 15px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 2rem;
-    padding: 0.5rem;
+    display: grid; /* Use grid layout for the about container */
+    grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
+    grid-template-rows: repeat(4, 1fr); /* Create four equal rows */
+    row-gap: 15px; /* Set the gap between rows */
+    border-style: solid; /* Set solid border style */
+    border-width: 2px; /* Set border width */
+    border-radius: 2rem; /* Round the corners of the container */
+    padding: 0.5rem; /* Add padding inside the container */
 }
 
+.about_container_front {
+    background-color: #3dccc7; /* Set background color for the front section */
+    color:#ddd; /* Set text color for the front section */
+}
+
+
+/* Frontend background color */
+.frontend-box .about_container{
+    background-color: #013a63; /* Set background color for the frontend section (dark blue) */
+    color: white; /* Set text color to white for better contrast */
+}
+
+  /* Backend background color */
+.backend-box .about_container{
+    background-color: #ff5a5f; /* Set background color for the backend section (red) */
+    color: white; /* Set text color to white for better contrast */
+}
+
+  /* Soft Skills background color */
+.softskills-box .about_container{
+    background-color: #16697a; /* Set background color for the soft skills section (teal) */
+    color: white; /* Set text color to white for better contrast */
+}
+
+
 h4 {
-    font-size: 12pt;
+    font-size: 12pt; /* Set font size for h4 headings */
 }
 
 .skills_container {
-    margin: 5px; 
+    margin: 5px;  /* Add margin around the skills container */
 }
 
 .skills_container p {
-    font-size: 10pt;
+    font-size: 10pt; /* Set font size for paragraphs within the skills container */
 }
 
 /* 4 - Soft Skills */
 
 .soft_skills{
-    display: flex;
-    justify-content: center;
-    margin: 10px;
+    display: flex; /* Use flexbox layout for the soft skills section */
+    justify-content: center; /* Center the content horizontally */
+    margin: 10px; /* Add margin around the soft skills section */
 }
 
 
 .skills_item{
-    display: flex;
-    align-items: center;
+    display: flex; /* Use flexbox layout for individual skill items */
+    align-items: center; /* Align items vertically in the center */ 
 }
 
 .skills_item i {
-    margin-right: 10px;
-    margin-bottom: 0.5rem;
+    margin-right: 10px; /* Add right margin to icons for spacing */
+    margin-bottom: 0.5rem; /* Add bottom margin to icons for spacing */
 
 }
 
@@ -304,69 +401,121 @@ h4 {
 /* 5 - Education */
 
 #education {
-    padding: 20px;
-  }
-  
-  .title {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .education {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    padding: 20px; /* Add padding around the education section */
+}
+
+.title {
+    text-align: center; /* Center-align the title text */
+    font-size: 24px; /* Set font size for the title */
+    margin-bottom: 10px; /* Add bottom margin to create space below the title */
+}
+
+.education {
+    display: grid; /* Use grid layout for the education section */
+    grid-template-columns: repeat(3, 1fr); /* Create three equal columns */
     gap: 20px; /* Space between the columns */
-  }
-  
-  .edu {
-    background-color: #f9f9f9;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 1rem;
-    text-align: center;
-  }
-  
-  .edu p {
-    margin: 5px 0;
+}
+
+.edu {
+    background-color: #f9f9f9; /* Set a light gray background color for each education item */
+    padding: 15px; /* Add padding inside the education items */
+    border: 1px solid #ddd; /* Set a light gray border around the education items */
+    border-radius: 1rem; /* Round the corners of the education items */
+    border-width: 2px; /* Set the border width */
+    border-top-width: 10px; /* Increase the top border width for emphasis */
+    text-align: center; /* Center-align text within the education items */
+}
+
+.edu p {
+    margin: 5px 0; /* Add vertical margin to paragraphs within education items */
     font-style: normal; /* disable the default italic style for <em> */
-    font-weight: bold;
-  }
+    font-weight: bold; /* Make the text bold */
+}
+
+.edu1 .edu{
+    border-color: #013a63; /* Set border color for the first education item (dark blue) */
+    color:#013a63; /* Set text color for the first education item */
+}
+
+.edu2 .edu{
+    border-color: #ff5a5f; /* Set border color for the second education item (red) */
+    color: #ff5a5f; /* Set text color for the second education item */
+}
+
+.edu3 .edu{
+    border-color: #16697a; /* Set border color for the third education item (teal) */
+    color: #16697a; /* Set text color for the third education item */
+}
+
 
 /* 6 - Projects */
 
+
+.main-section > h2 {
+    font-size: 2rem; /* Set font size for h2 elements in the main section */
+}
+
+.project-box h2 {
+    color: #22577a; /* Set text color for h2 elements within project boxes */
+}
+
+
 .projects-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: minmax(550px, auto);
+    display: grid; /* Use grid layout for the projects container */
+    grid-template-columns: repeat(3, 1fr); /* Create three equal columns */
+    grid-template-rows: minmax(550px, auto); /* Set minimum row height of 550px, with automatic height adjustment */
 }
 
 
 
 .project-box img{
-    max-width: 80%;
-    height: auto;
-    margin: 1em 0 2em 2em;
-    border-radius: 1rem;
-    display: flex;
+    max-width: 100%; /* Ensure the image does not exceed the width of its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    margin: 1em; /* Add margin around the image for spacing */
+    border-radius: 1rem; /* Round the corners of the image */
+    display: flex; /* Enable flexbox for image alignment */
 }
 
 .project-box {
-    border-style: solid;
-    border-width: 6px 2px 2px 2px;
-    border-radius: 2rem;
-    margin: 20px;
-    text-align: center;
-    border-color: darkcyan;
+    display: flex; /* Use flexbox layout for individual project boxes */
+    flex-direction: column; /* Stack child elements vertically */
+    border-style: solid;  /* Set solid border style for project boxes */
+    border-width: 6px 2px 2px 2px; /* Set different border widths for each side */
+    border-radius: 2rem; /* Round the corners of the project boxes */
+    margin: 20px; /* Add margin around each project box */
+    text-align: center; /* Center-align text within the project box */
+    border-color: #06aed5; /* Set border color to a teal shade */
+    background-color: white; /* Set background color to white */
 }
 
 .project-box a{
-    border-style: solid;
-    border-radius: 2rem;
-    padding: 5px;
+    border-style: solid; /* Set solid border style for the link within the project box */
+    border-radius: 2rem; /* Round the corners of the link */
+    padding: 5px; /* Add padding inside the link for spacing */
+    border-color: #a6d8aa; /* Set border color */
+    background-color: #c7f9cc; /* Set background color */
+    color: #1a535c; /* Set text color */
+}
+
+.project-box a:hover{
+    border-color: #57cc98; /* Change border color on hover */
+    background-color: #57cc99; /* Change background color on hover */
+    color: white; /* Change text color to white on hover for better contrast */
+}
+
+.project-footer {
+    display: flex; /* Use flexbox layout for the project footer */
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center; /* Center-align child elements horizontally */
+    margin-top: auto; /* Push footer to the bottom of the project box */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
 }
 
 /* 7 - Contact */
+
+.contact h2 {
+    font-size: 2rem;;
+}
 
 #contact {
     max-width: 500px; /* Set max width for the form container */
@@ -374,44 +523,240 @@ h4 {
     padding: 10px; /* Add padding inside the box */
     border: 1px solid; /* Add a border around the box */
     border-radius: 10px; /* Round the corners of the box */
-    background-color:rgb(204, 238, 227); /* Light background color */
+    background-color: #137c96; 
 }
 
-
 .form-container {
-    display:flex;
-    flex-direction: column;
+    display:flex; /* Use flexbox layout for the form container */
+    flex-direction: column; /* Stack child elements vertically in a column */
 }
 
 /* Style for labels and inputs */
 label {
     margin-bottom: 5px; /* Space between label and input */
     font-weight: bold;  /* Make labels bold */
-  }
+    color: white;
+}
 
-  button {
+button {
     padding: 10px 20px; /* Button padding */
-    background-color: #333; /* Dark background color */
+    background-color: #00afb9;
     color: white; /* White text */
     border: none; /* Remove border */
     border-radius: 5px; /* Rounded corners */
     cursor: pointer; /* Cursor pointer for button */
-  }
-
-  button:hover {
-    background-color:darkgrey; /* Lighter background on hover */
-  }
-
-
-.form-text {
-  margin-bottom: 10px; /* Space between inputs */
-  padding: 10px; /* Add padding inside inputs */
-  border: 1px solid; /* Border for inputs */
-  border-color: beige;
-  border-radius: 5px; /* Rounded corners */
-  font-size: 12pt; /* Font size for inputs */
+    font-size: 1rem; /* font size for button */
 }
 
+button:hover {
+    background-color: #1b4965; /* Lighter background on hover */
+}
+
+.form-text {
+    margin-bottom: 10px; /* Space between inputs */
+    padding: 10px; /* Add padding inside inputs */
+    border: 1px solid; /* Border for inputs */
+    border-color: beige;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size for inputs */
+}
+
+/* 8 - Responsive Layout */
+
+/* Adjusting overall layout for smaller screens */
+@media (max-width: 768px) {
+    /* Navigation */
+    .navbar {
+        flex-direction: column; /* Stack navigation items vertically */
+        gap: 20px; /* Add space between navigation items */
+        font-size: 1rem; /* Reduce font size */
+    }
+
+    .nav > h1 {
+        font-size: 1.7rem; /* Adjust font size for the main heading in the navigation */
+    }
+
+    /* Section About Me */
+    #about_me {
+        grid-template-columns: 1fr; /* Change to a single column layout for the about section */
+        grid-template-rows: auto; /* Set rows to automatically size based on content */
+    }
+
+    .headshot img {
+        max-width: 40%; /* Set maximum width for headshot image to make it smaller on tablets */
+    }
+
+    .text {
+        text-align: center; /* Center-align text for better appearance on smaller screens */
+        margin: 20px; /* Add margin around the text for spacing */
+    }
+
+    .text h2, .name {
+        font-size: 2.1rem; /* Set font size for h2 elements and name class to 2.1rem */
+    }
+
+    .text > p {
+        font-size: 1.2rem; /* Set font size for direct child paragraphs of .text to 1.2rem */
+    }
+    
+
+    .text > p > span, #school > p > span {
+        font-size: 1.2rem; /* Set font size for span elements that are direct children of paragraphs in .text and #school to 1.2rem */
+    }
+
+
+    /* footer */
+    .footer-container {
+        display: flex;
+        flex-direction: column; /* Arrange a tags in a vertical column */
+        justify-content: center; /* Center vertically */
+        align-items: center; /* Center horizontally */
+        font-size: 1.2rem; /* Set the font size to 1.2rem for better readability */
+        margin: 5px; /* Add a margin of 5px around the element to create space between it and surrounding elements */
+        padding: 5px; /* Add padding of 5px inside the element for spacing between the content and the element's border */
+    }
+    
+      /* Styling for individual a tags */
+    .footer-container a {
+        display: flex; /* Use flexbox layout for the element */
+        flex-direction: column; /* Stack icon and text vertically */
+        align-items: center; /* Center icon and text horizontally */
+        text-decoration: none; /* Remove underline from links to ensure a cleaner look */
+        font-size: 1.2rem;  /* Set the font size to 1.2rem for better readability */
+    }
+
+
+    /* resume */
+
+    .picture-container img {
+        display: none; /* Hide all images within the picture container */
+    }
+
+
+    /* Set the whole layout to one column */
+    .container, 
+    .tech_skills, 
+    .education, 
+    .footer-container {
+        display: flex; /* Use flexbox layout for the specified containers */
+        flex-direction: column; /* Stack child elements vertically in a single column */
+        align-items: center; /* Center child elements horizontally */
+        justify-content: center; /* Center child elements vertically */
+        width: 100%; /* Set the width of the container to 100% of the parent */
+    } 
+
+    /* Container to center the anchor and button */
+    .picture-container {
+        display: flex; /* Use flexbox layout for the specified containers */
+        flex-direction: column; /* Stack the elements vertically */
+        align-items: center; /* Center horizontally */
+        justify-content: center; /* Center vertically */
+        width: 100%; /* Ensure it takes up full width */
+        text-align: center; /* Center the text inside the link */
+    }
+
+    /* Center the button */
+    .btn {
+    margin: 10px auto; /* Center button horizontally */
+    padding: 10px 20px; /* Add vertical and horizontal padding for spacing */
+    width: auto; /* Adjust width as needed */
+    }
+
+
+    /* Education section in one column */
+    .edu1, .edu2, .edu3 {
+    width: 100%; /* Set width to 100% for full-width display */
+    text-align: center; /* Center text within the education sections */
+    margin-bottom: 20px; /* Add bottom margin for spacing between sections */
+    }
+
+    /* Section School */
+    #school {
+        grid-template-columns: 1fr; /* Set to a single column layout for mobile */
+        margin: 20px; /* Add margin around the school section */
+    }
+
+    /* Projects Section */
+    .projects-container {
+        grid-template-columns: 1fr; /* Single column for mobile */
+        grid-template-rows: auto; /* Rows will automatically size based on content */
+        margin: 10px; /* Add margin around the projects container for spacing */
+    }
+
+    .project-box {
+        margin: 10px; /* Add margin around each project box for spacing */
+        padding: 10px; /* Add padding inside the project box for content spacing */
+    }
+
+    /* Contact Section */
+    #contact {
+        max-width: 100%; /* Expand contact form for mobile */
+        margin: 20px; /* Add margin around the contact section for spacing */
+    }
+}
+
+/* Adjusting layout for tablet screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /* NAV bar */
+    .navbar {
+        font-size: 1.2rem; /* Increase font size for better readability on tablet screens */
+    }
+
+    .nav > h1 {
+        font-size: 1.8rem; /* Adjust font size for the main heading in the navigation */
+    }
+
+    /* About me */
+    .headshot img {
+        max-width: 50%; /* Slightly smaller for tablets */
+    }
+
+    .text h2, .name {
+        font-size: 2.1rem; /* Set font size for h2 elements and name class to 2.1rem for prominence */
+    }
+
+    .text > p {
+        font-size: 1.2rem; /* Set font size for direct child paragraphs of .text to 1.2rem for readability */
+    }
+
+    .text > p > span, #school > p > span {
+        font-size: 1.2em; /* Set font size for span elements in paragraphs of .text and #school to 1.2em for consistency */
+    }
+
+    /* resume */
+
+    .btn {
+        margin-left: 3rem; /* Add left margin to position the button away from the edge */
+        margin-top: 1rem; /* Add top margin for spacing above the button */
+    }
+
+    .tech_skills {
+        display: grid;
+        grid-template-columns: repeat(2, 50%); /* Create two equal columns for the tech skills */
+    }
+    
+    /* Soft Skills to be on a new line and centered */
+    .details_container_soft {
+        grid-column: 1 / -1; /* Place on its own row */
+        justify-self: center; /* Center the Soft Skills section */
+        text-align: center;
+        width: 100%; /* Make sure it takes the full available width */
+        max-width: 500px; /*limit the width of the Soft Skills box */
+        margin-top: 30px; /*set margin top*/
+    }
+
+
+    /* Projects */
+    .projects-container {
+        grid-template-columns: 1fr 1fr; /* Two columns for tablet */
+    }
+
+    #school {
+        grid-template-columns: 1fr 1fr; /* Adjust school layout */
+        gap: 10px; /* Add space between the columns for better visual separation */
+    }
+}
 
 
 
